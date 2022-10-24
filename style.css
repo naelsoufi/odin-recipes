@@ -8,9 +8,58 @@ header {
     height: 100vh;
     background-image: url("./images/ainsley-harriott.jpg");
     background-size: cover;
+    overflow: hidden;
+}
+
+#layer {
+    background-color: rgba(185, 99, 99, 0.7);
+    width: 100%;
+    height: 100%;
+    padding-top: 35vh;
+}
+
+#layer h1,
+#secondary-title {
+    text-align: center;
+}
+
+h1, #secondary-title {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1, nav{
+    text-transform: uppercase;
 }
 
 h1 {
-    margin: 0px;
-    padding: 0px;
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+#secondary-title {
+    font-family: "Times New Roman", serif;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+nav ul {
+    text-align: center;
+    margin-top: 32px;
+}
+
+nav li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 52px;
+    letter-spacing: 0.1em;
+}
+
+nav li:last-child {
+    margin-right: none;
+}
+
+nav li a {
+    color: black;
 }
