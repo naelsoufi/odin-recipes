@@ -3,27 +3,37 @@
     font-size: 16px;
 }
 
+/*HEADER */
+#home-header {
+    background-image: url("./images/ainsley-harriott.jpg");
+    height: 100vh;
+}
+
 header {
     width: 100%;
-    height: 100vh;
-    background-image: url("./images/ainsley-harriott.jpg");
     background-size: cover;
+    background-position: center;
     overflow: hidden;
+    height: 60vh;
 }
 
 #layer {
-    background-color: rgba(185, 99, 99, 0.7);
+    background-color: rgba(237, 110, 58, 0.7);
     width: 100%;
     height: 100%;
+    padding-top: 25vh;
+}
+
+#home-header #layer {
     padding-top: 35vh;
 }
 
 #layer h1,
-#secondary-title {
+#secondary-title, #layer p{
     text-align: center;
 }
 
-h1, #secondary-title {
+h1, #secondary-title, #layer p {
     margin: 0px;
     padding: 0px;
 }
@@ -38,10 +48,17 @@ h1 {
     letter-spacing: 0.1em;
 }
 
-#secondary-title {
+#secondary-title, #layer p {
     font-family: "Times New Roman", serif;
-    font-size: 2rem;
     font-style: italic;
+}
+
+#secondary-title {
+    font-size: 2rem;
+}
+
+#layer p {
+    font-size: 1.2rem;
 }
 
 nav ul {
@@ -62,4 +79,47 @@ nav li:last-child {
 
 nav li a {
     color: black;
+}
+
+/*ARTICLE*/
+section {
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section h2 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+section li {
+    margin-bottom: 1rem;
+}
+
+article {
+    margin-top: 2rem;
+    padding : 1rem;
+    display: inline-block;
+}
+
+#ingredients {
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    flex-grow: 1;
+    display: inline-block;
+    max-height: 260px;
+}
+
+#steps {
+    flex-grow: 9;
+}
+
+
+article li:last-child {
+    margin-bottom: 0px;
 }
